@@ -17,7 +17,7 @@ export class StoreService {
 
 		if (!store)
 			throw new NotFoundException(
-				'Store not found or you are not the owner'
+				'Магазин не найден или вы не являетесь его владельцем'
 			)
 
 		return store
