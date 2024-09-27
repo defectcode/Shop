@@ -1,13 +1,15 @@
-import { IsString } from 'class-validator'
+import { IsString } from "class-validator";
+
 
 export class ColorDto {
-	@IsString({
-		message: 'Название обязательно'
-	})
-	name: string
+    @IsString({
+        message: 'Name is required'
+    })
+    name: string
 
-	@IsString({
-		message: 'Значение обязательно'
-	})
-	value: string
+    @IsString({
+        message: 'The description is mandatory'
+    })
+    value: string
 }
+
